@@ -14,7 +14,7 @@
 #include "yaffs_guts.h"
 #include "yaffs_attribs.h"
 
-#if (LINUX_VERSION_CODE < KERNEL_VERSION(3, 14, 0))
+#if (LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0))
 #define IATTR_UID ia_uid
 #define IATTR_GID ia_gid
 #else

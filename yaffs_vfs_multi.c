@@ -1219,7 +1219,7 @@ struct inode *yaffs_get_inode(struct super_block *sb, int mode, int dev,
 #define YCRED(x) (x->cred)
 #endif
 
-#if LINUX_VERSION_CODE < KERNEL_VERSION(3,14,0)
+#if LINUX_VERSION_CODE < KERNEL_VERSION(3,13,0)
 #define YPROC_uid(p) (YCRED(p)->fsuid)
 #define YPROC_gid(p) (YCRED(p)->fsgid)
 #define EXTRACT_gid(x) x
@@ -3468,7 +3468,7 @@ static int yaffs_proc_debug_write(struct file *file, const char *buf,
 }
 
 
-#if (LINUX_VERSION_CODE < KERNEL_VERSION(3, 14, 0))
+#if (LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0))
 static int yaffs_proc_write(struct file *file, const char *buf,
 			    unsigned long count, void *ppos)
 #else

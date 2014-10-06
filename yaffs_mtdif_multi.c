@@ -22,7 +22,7 @@
 #include "linux/kernel.h"
 #include "linux/version.h"
 #include "linux/types.h"
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 14, 0))
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 13, 0))
 #include "uapi/linux/major.h"
 #endif
 
